@@ -3,7 +3,7 @@ package javaoo.exercicios.applications.classes;
 import java.util.Locale;
 import java.util.Scanner;
 
-import javaoo.applications.util.CurrencyConverter;
+import javaoo.exercicios.utils.CurrencyConverter;
 
 public class ProgramCurrencyConverter {
 
@@ -22,6 +22,5 @@ public class ProgramCurrencyConverter {
 		System.out.printf("Valor a ser pago em reais = %.2f%n", result);
 		
 		sc.close();
-		}
-		
+		}	
 }
