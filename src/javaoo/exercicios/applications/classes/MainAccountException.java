@@ -1,9 +1,10 @@
-package javaoo.exercicios.entities;
+package javaoo.exercicios.applications.classes;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import javaoo.exercicios.entities.excepitons.BusinessException;
+import javaoo.exercicios.entities.AccountException;
+import javaoo.exercicios.excepitons.BusinessException;
 
 /**
  * 

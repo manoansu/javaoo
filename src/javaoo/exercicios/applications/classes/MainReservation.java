@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 import javaoo.exercicios.entities.Reservation;
-import javaoo.exercicios.entities.excepitons.DomainException;
+import javaoo.exercicios.excepitons.DomainException;
 
 /**
  * 

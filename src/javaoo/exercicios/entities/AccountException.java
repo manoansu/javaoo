@@ -1,6 +1,6 @@
 package javaoo.exercicios.entities;
 
-import javaoo.exercicios.entities.excepitons.BusinessException;
+import javaoo.exercicios.excepitons.BusinessException;
 
 public class AccountException {
 
