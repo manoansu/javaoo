@@ -38,9 +38,12 @@ Account 8532, Holder: Alex Green, Balance: $ 395.00
 
 public class Account {
 
-	private int number;
-	private String holder;
-	private double balance;
+	protected int number;
+	protected String holder;
+	protected double balance;
+	
+	public Account() {
+	}
 
 	public Account(int number, String holder) {
 		this.number = number;
@@ -73,8 +76,12 @@ public class Account {
 		balance += amount;
 	}
 
-	public void withdraw(double amount) {
+	public void withdrawAddTax(double amount) {
 		balance -= amount + 5.0;
+	}
+	
+	public void withdraw(double amount) {
+		balance -= amount;
 	}
 
 	public String toString() {
