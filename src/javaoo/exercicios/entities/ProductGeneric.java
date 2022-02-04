@@ -1,11 +1,11 @@
 package javaoo.exercicios.entities;
 
-public class Product implements Comparable<Product> {
+public class ProductGeneric implements Comparable<ProductGeneric> {
 
 	private String name;
 	private Double price;
 
-	public Product(String name, Double price) {
+	public ProductGeneric(String name, Double price) {
 		this.name = name;
 		this.price = price;
 	}
@@ -26,18 +26,13 @@ public class Product implements Comparable<Product> {
 		this.price = price;
 	}
 
-	public String priceTag() {
-		return name + " $ " + String.format("%.2f", price);
-	}
-
 	@Override
 	public String toString() {
-		return "Product [name=" + name + ", price=" + price + "]";
+		return name + ", " + String.format("%.2f", price);
 	}
 
 	@Override
-	public int compareTo(Product prod) {
-		return name.toUpperCase().compareTo(prod.getName().toUpperCase());
+	public int compareTo(ProductGeneric other) {
+		return price.compareTo(other.getPrice());
 	}
-
 }
